@@ -12,9 +12,12 @@ public class QuestsCommand implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
 
         if (commandSender instanceof Player player
-                && ConfigUtil.CMD_QUESTS_USAGE_ENABLED
-                && args.length == 0) {
-            MessageUtils.sendMessage(player, "Quests command send");
+                && ConfigUtil.CMD_QUESTS_USAGE_ENABLED) {
+            if (args.length == 0) {
+                MessageUtils.sendMessage(player, "Quests command send");
+            }else{
+                MessageUtils.sendMessage(player, ConfigUtil.CMD_QUESTS_USAGE);
+            }
         }
         return true;
     }
