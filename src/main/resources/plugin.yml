@@ -1,0 +1,7 @@
+name: PlayerQuests
+version: '1.0-SNAPSHOT'
+main: me.trindade.playerQuests.PlayerQuests
+api-version: '1.21'
+commands:
+  quests:
+    description: Opens the PlayerQuests menu.

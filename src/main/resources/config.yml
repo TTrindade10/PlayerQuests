@@ -1,0 +1,6 @@
+start-message: "Started: PlayerQuests"
+stop-message: "Stopped: PlayerQuests"
+prefix: "&8[&cP&6Q&8] "
+prefix-enabled: true
+cmd-quests-usage: "Usage: /quests"
+cmd-quests-usage-enabled: true
